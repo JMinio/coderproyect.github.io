@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar + responsive</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/animate.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#inicio">
+                <img src="https://www.pngmart.com/files/13/Akatsuki-Logo-PNG-Pic.png" alt="logo-png">
+            </a>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="/pages/male-category.html">NIÑOS</a></li>
+                <li><a href="/pages/female-category.html">NIÑAS</a></li>
+                <li><a href="/pages/accesories.html">ACCESORIOS</a></li>
+                <li><a href="/pages/contacto.html">CONTACTÁNOS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="presentacion flex">
+        <div class="left w-50">
+            <h1 class="animate__animated fadeInUp">Kid´s Store</h1> <!-- ANIMAR CON WOW ANIMATION -->
+            <p class="animate__animated fadeInUp animate__delay-1s">Sin duda los niños estaran a la moda con nuestra
+                ropa, <br>
+                y se divertiran con nuestros accesorios.</p>
+            <h3 class="animate__animated fadeInUp animate__delay-1s">Seguinos en nuestras redes:</h3>
+            <div class="iconos-de-redes">
+                <a href="">
+                    <img class="redes animate__animated fadeInUp animate__delay-1s" src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="Twitter">
+                </a>
+                <a href="">
+                    <img class="redes animate__animated fadeInUp animate__delay-1s" src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="Instagram">
+                </a>
+                <a href="">
+                    <img class="redes animate__animated fadeInUp animate__delay-1s" src="https://cdn-icons-png.flaticon.com/512/20/20673.png" alt="Facebook">
+                </a>
+            </div>
+        </div>
+        <div class="right w-50">
+            <section class="carousel">
+                <div id="carouselExample" class="carousel slide">
+                    <!-- GALERIA DE LOCALES -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/remera-de-niña.jpeg" class="d-block w-100" alt="foto-del-carousel">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/remera-de-niña.jpeg" class="d-block w-100" alt="foto-del-carousel">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/remera-de-niña.jpeg" class="d-block w-100" alt="foto-del-carousel">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="left">
+            <h1 class="footer__left--title animate__animated fadeInUp animate__delay-1s">MAS INFORMACIÓN</h1>
+            <ul>
+                <li class=" animate__animated animate__fadeIn fadeInUp animate__delay-2s">Quienes somos</li>
+                <li class=" animate__animated animate__fadeIn fadeInUp animate__delay-2s">Nuestras sucursales</li>
+                <li class=" animate__animated animate__fadeIn fadeInUp animate__delay-2s">Contacto</li>
+            </ul>
+        </div>
+        <div class="right">
+            <h1 class="footer__right--title animate__animated fadeInUp animate__delay-1s">REDES</h1>
+            <ul>
+                <li class=" animate__animated animate__fadeIn fadeInUp animate__delay-2s">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="Twitter">Twitter
+                </li>
+                <li class=" animate__animated animate__fadeIn fadeInUp animate__delay-2s">
+                    <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="Instagram">Instagram
+                </li>
+                <li class=" animate__animated animate__fadeIn fadeInUp animate__delay-2s">
+                    <img src="https://cdn-icons-png.flaticon.com/512/20/20673.png" alt="Facebook"> Facebook
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
