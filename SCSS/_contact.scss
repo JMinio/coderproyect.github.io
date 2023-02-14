@@ -1,0 +1,20 @@
+
+
+.contacto__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    color: $primaryTextColor;
+    margin-bottom: 2%;
+    background-color: $primaryBackColor;
+    padding: 5%;
+
+    form{
+        width: $w-50;
+    }
+
+}
+

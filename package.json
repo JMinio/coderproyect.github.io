@@ -1,9 +1,24 @@
 {
-  "dependencies": {
-    "animate.css": "^4.1.1"
+  "name": "juli",
+  "version": "1.0.0",
+  "description": "sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/main.scss css/main.css"
   },
-  "devDependencies": {
-    "node-sass": "^8.0.0",
-    "nodemon": "^2.0.20"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JMinio/jminio-sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JMinio/jminio-sass/issues"
+  },
+  "homepage": "https://github.com/JMinio/jminio-sass#readme",
+  "dependencies": {
+    "sass": "^1.58.1"
   }
 }

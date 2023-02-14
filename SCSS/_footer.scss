@@ -1,0 +1,69 @@
+
+footer {
+    padding: 5% 15% 2% 10%;
+    color: $primaryTextColor;
+    background-color: $primaryBackColor;
+    @include flex(flex,column,center,center);
+
+    img{
+        margin-right: 2%;
+        width: 10%;
+        height: 10%;
+    }
+
+    ul{
+        list-style: none;
+    }
+    
+    .left{
+        margin-left: 5%;
+        width: $w-100;
+    }
+
+    .right{
+
+        ul{
+            li{
+                margin-bottom: 1%;
+            }
+        }
+    }
+
+    @include medias (tablet){
+        padding: 5%;
+        font-size: 1.2em;
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    
+        .left{
+            margin-right: 10%;
+            width: 50%;
+        }
+        .right{
+            margin-top: 2%;
+            width: $w-50;
+        }
+    }
+
+    @include medias (desktop){
+        padding: 2% 0 2% 15%;
+    
+        div h1{
+            font-size: 2em;
+        }
+
+        .right{
+            margin-top: 1%;
+            width: $w-50;
+            
+            img{
+                margin-right: 2%;
+                width: 5%;
+                height: 5%;
+            }
+        }
+    }
+
+}

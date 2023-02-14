@@ -6,6 +6,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
+body {
+    background: linear-gradient(45deg, #0172AF, #74FEBD);
+}
+
 nav {
     height: 15vh;
     width: 100%;
@@ -17,152 +21,163 @@ nav {
     align-items: center;
 }
 
-nav a{
+nav a {
     width: 30%;
 }
 
-nav a img{
+nav a img {
     width: 50%;
     margin: 5% 0 2% 5%;
-} 
+}
 
-nav ul{
+nav ul {
     display: flex;
 }
 
-nav ul li{
+nav ul li {
     margin-top: 5%;
     list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
     font-size: 1em;
     text-decoration: none;
-    color:white;
+    color: white;
     margin-left: 15px;
-    background-image: linear-gradient(currentColor,currentColor);
+    background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .3s;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: burlywood;
     font-weight: 600;
     background-size: 100% 2px;
 }
 
-body{
-    background: linear-gradient(45deg, #0172AF, #74FEBD);
-}
 
-main h1{
-    color: white;
-}
-
-
-@media (min-width:460px){
-    nav{
+@media (min-width:460px) {
+    nav {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: auto;
+        justify-content: center;
+        align-items: center;
     }
-    nav a{
+
+    nav a {
         margin-left: 10%;
     }
 }
-@media (min-width:1024px){
-    
-    nav{
+
+@media (min-width:1024px) {
+
+    nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        height: 15vhw;
+        height: 15vh;
         padding-top: 2%;
     }
-    nav a{
+
+    nav a {
         width: 20%;
     }
-    nav a img{
+
+    nav a img {
         margin-top: 0;
         height: 5vh;
         width: 4vw;
     }
-    nav ul li{
+
+    nav ul li {
         margin-top: 0%;
         margin-right: 30px;
     }
 
-    .presentacion{
+    .indexPresentacion {
         display: flex;
         flex-direction: row;
-    } 
+    }
 
-    .presentacion .left {
+    .indexPresentacion .left {
         width: 50%;
     }
 
-    .presentacion .right {
+    .indexPresentacion .right {
+        padding: 7%;
         width: 50%;
     }
 
-    .presentacion .left h1{
+    .indexPresentacion .left h1 {
         font-size: 5em;
         font-weight: 600;
     }
 
-    .presentacion .left p,h3{
+    .indexPresentacion .left p,
+    h3 {
         color: white;
         padding: 5%;
         margin-left: 15%;
         width: 70%;
         background-color: #131313;
     }
-    .presentacion .left div img{
+
+    .indexPresentacion .left div img {
         width: 25%;
     }
-    .presentacion .right{
-        padding: 7%;
-    }
+
 }
 
-/* ----------------------------- MAIN - GALERIAS ----------------------------- */
+/* ----------------------------- MAIN - CONTACTO ----------------------------- */
 
-.contacto__form{
+.contacto__form {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: auto;
     color: white;
-    margin-bottom: 15%;
+    margin-bottom: 2%;
     background-color: #131313;
     padding: 5%;
 }
 
-.contacto__form form{
+.contacto__form form {
     width: 50%;
 }
 
 /* ----------------------------- MAIN - GALERIAS ----------------------------- */
 
-.container{
-    padding: 5% 15%;
+.container {
+    padding: 3% 15% 0% 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-h1{
+h1 {
     color: white;
     font-size: 1.3em;
     margin-bottom: 5%;
 }
 
-main div img {
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+main h1 {
+    color: white;
+}
+
+main #galery img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -171,127 +186,129 @@ main div img {
 .foto-a {
     grid-area: fotoA;
 }
+
 .foto-b {
     grid-area: fotoB;
 }
-.foto-c{
+
+.foto-c {
     grid-area: fotoC;
 }
+
 .foto-d {
     grid-area: fotoD;
 }
-.foto-e{
+
+.foto-e {
     grid-area: fotoE;
 }
+
 .foto-f {
     grid-area: fotoF;
 }
 
-#galery{
+#galery {
+    gap: 20px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 300px);
     grid-template-areas: "fotoA" "fotoB" "fotoC" "fotoD" "fotoE" "fotoF";
     margin: 1%;
-}
+}   
 
-@media (min-width:768px) {
+@media (min-width:1024px) {
 
-    h1{
+    h1 {
         font-size: 3em;
     }
 
-    iframe{
+    main .container iframe {
         height: 450px;
     }
 
-    #galery{
+    main #galery {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3,400px);
-        grid-template-areas: 
-        "fotoA fotoB fotoC"
-        "fotoA fotoD fotoE"
-        "fotoA fotoF fotoF";
+        grid-template-rows: repeat(3, 400px);
+        grid-template-areas: "fotoA fotoB fotoC" "fotoA fotoD fotoE" "fotoA fotoF fotoF";
         gap: 10px;
-    }
+      }
 }
 
-.presentacion{
+/* INICIO DEL INDEX*/
+.indexPresentacion {
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding-bottom:10% ;
+    padding-bottom: 10%;
 }
 
-.presentacion .left div img{
-    width: 50%;
-}
-.presentacion .left {
+.indexPresentacion .left {
     margin-top: 10%;
     text-align: center;
 }
 
-.presentacion .left h1{
+.indexPresentacion .left h1 {
     font-size: 3em;
     font-weight: 600;
 }
-.presentacion .left p,h3{
+
+.indexPresentacion .left p,
+h3 {
     color: white;
     padding: 5%;
     background-color: #222;
 }
-.presentacion .left h3{
-    color: white;
-}
-.presentacion .left div{
+
+.indexPresentacion .left div {
     display: flex;
     flex-direction: row;
-    margin: 6% 0 5% 0;
+    margin: 6% 0;
     justify-content: center;
 }
 
-.presentacion .right{
+.indexPresentacion .left div img {
+    width: 50%;
+}
+
+.indexPresentacion .right {
     width: 100%;
 }
 
 @media (min-width:1024px) {
 
-    h1{
-        font-size: 4em;
-    }
-    
-    .presentacion{
-        flex-direction:row;
+    .indexPresentacion {
+        flex-direction: row;
     }
 
-    
-    .presentacion .left{
+    .indexPresentacion .left {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
-    
-    .presentacion .left .iconos-de-redes img{
+
+    .indexPresentacion .left .iconos-de-redes img {
         width: 20%;
     }
 
-    #galery{  /* GALERIA DE NIÑOS Y NIÑAS */
+    #galery {
+        /* GALERIA DE NIÑOS Y NIÑAS */
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: repeat(3,400px);
-        grid-template-areas: 
-        "fotoA fotoB fotoC"
-        "fotoA fotoD fotoC"
-        "fotoA fotoE fotoF";
+        grid-template-rows: repeat(3, 400px);
+        grid-template-areas:
+            "fotoA fotoB fotoC"
+            "fotoA fotoD fotoC"
+            "fotoA fotoE fotoF";
         gap: 10px;
     }
 }
 
 /* ----------------------------- CODIGO DEL FOOTER -----------------------------  */
 
-footer{
+footer {
     padding: 5% 15% 2% 10%;
     color: white;
     background-color: #131313;
@@ -301,25 +318,25 @@ footer{
     align-items: center;
 }
 
-footer ul{
+footer ul {
     list-style: none;
 }
 
-footer .left{
+footer .left {
     margin-left: 5%;
     width: 100%;
 }
 
-footer .right{
+footer .right {
     margin-left: 5%;
     width: 100%;
 }
 
-footer .right ul li{
+footer .right ul li {
     margin-bottom: 1%;
 }
 
-footer img{
+footer img {
     margin-right: 2%;
     width: 10%;
     height: 10%;
@@ -327,8 +344,8 @@ footer img{
 
 
 
-@media (min-width:600px){
-    footer{
+@media (min-width:600px) {
+    footer {
         padding: 5%;
         font-size: 1.2em;
         margin-left: 0;
@@ -336,32 +353,30 @@ footer img{
         flex-direction: row;
         justify-content: space-around;
     }
-    footer .left{
+
+    footer .left {
         margin-right: 10%;
         width: 50%;
     }
 
-    footer .right{
+    footer .right {
         margin-top: 2%;
         width: 50%;
     }
 }
 
-@media (min-width:1024px){
-    footer{
+@media (min-width:1024px) {
+    footer {
         padding: 2% 0 2% 15%;
     }
-
-    footer div h1{
+    footer div h1 {
         font-size: 2em;
     }
-
-    footer .right{
+    footer .right {
         margin-top: 1%;
         width: 50%;
     }
-
-    footer .right img{
+    footer .right img {
         margin-right: 2%;
         width: 5%;
         height: 5%;

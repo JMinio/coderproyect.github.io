@@ -1,0 +1,23 @@
+
+
+//color-themes 
+$primaryBackColor:#131313;
+
+//text colors
+$primaryTextColor: white;
+
+//tamaños
+$w-100:100%;
+$w-50:50%;
+
+$h-100:100%;
+$h-50:50%;
+
+
+//ESTABLECEMOS UN MIXIN PARA LAS CAJAS FLEXIBLES
+@mixin flex ($display,$direction,$justify,$align){
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
