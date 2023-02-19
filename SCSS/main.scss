@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 @import "_vars.scss";
+@import "_nav.scss";
 @import "_galeries.scss";
 @import "_contact.scss";
-
+@import "_accesories.scss";
 
 * {
     margin: 0;
@@ -31,77 +32,6 @@ body {
     @if $breakpoint == desktop {
         @media (min-width:1024px){
             @content;
-        }
-    }
-}
-
-nav {
-
-    /* flex ($display,$direction,$justify,$align) */
-    @include flex(flex,column,center,center);
-    height: 15vh;
-    width: 100%;
-    background-color: $primaryBackColor;
-        a {
-            width: 30%;
-            img {
-                width: 50%;
-                margin: 3% 0 5% 5%;
-            }
-        }
-    ul {
-        display: flex;
-        li {
-            margin-top: 5%;
-            list-style: none;
-            a {
-                font-size: 1em;
-                text-decoration: none;
-                color: $primaryTextColor;
-                margin-right: 3vw;
-                background-image: linear-gradient(currentColor, currentColor);
-                background-position: 0% 100%;
-                background-repeat: no-repeat;
-                background-size: 0% 2px;
-                transition: background-size .3s;
-                    &:hover {
-                        color: burlywood;
-                        font-weight: 600;
-                        background-size: 100% 2px;
-                    }
-            }
-        }
-    }
-    
-    @include medias (mobile){
-        @include flex(flex,column,center,center);
-        width: $w-100;
-        height: auto;
-            a{
-                margin-left: 10%;
-                margin-top: 5%;
-            }
-    } 
-    @include medias (desktop){
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        height: 15vh;
-        padding-top: 1%;
-            a{
-                margin-left: 3%;
-                margin-bottom: 5%;
-                width: 20%;
-                img{
-                    height: 5vh;
-                    width: 4vw;
-                }
-            }
-        ul{
-            li{
-                margin-top: 0;
-                margin-right: 30px;
-            }
         }
     }
 }
@@ -179,4 +109,6 @@ nav {
 }
 
 }
+
+@import "_accesories.scss";
 @import "_footer.scss";

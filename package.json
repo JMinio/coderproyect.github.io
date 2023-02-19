@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/JMinio/jminio-sass#readme",
   "dependencies": {
-    "sass": "^1.58.1"
+    "sass": "^1.58.3"
   }
 }

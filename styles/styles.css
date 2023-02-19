@@ -134,6 +134,91 @@ nav ul li a:hover {
 
 }
 
+/* ----------------------------- MAIN - ACCESORIOS ----------------------------- */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "galeria-imagen1"
+    "galeria-imagen2"
+    "galeria-imagen3"
+    "galeria-imagen4";
+    gap: 10px;
+}
+
+.galeria__accesorios{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5%;
+}
+    .galeria__accesorios h1{
+        background-color: black;
+        text-align: center;
+        font-size:1.5em;
+        margin-top: 2%;
+        margin-bottom: 30px;
+    }
+    .galeria__accesorios a{
+        background: linear-gradient(45deg, #614385 , #516395);
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+        .galeria__accesorios a:hover{
+            cursor: crosshair;
+        }
+        .galeria__accesorios a h2{
+            margin-bottom: 10px;
+        }
+        .galeria__accesorios a img {
+            background-color: white;
+            height: 80%;
+            object-fit: contain;
+            width: 90%;
+            border-radius: 4px;
+        }
+        .galeria__accesorios a .btn{
+            cursor: pointer;
+            margin-top: 3%;
+            font-size: 1.5em;
+            width: 80%;
+            height: 8%;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+        }
+            .galeria__accesorios a .btn:hover{
+                transition: .5s all ease-in-out;
+                width: 90%;
+                background-color: white;
+                color: black;
+            }
+
+@media (min-width:768px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "galeria-imagen1 galeria-imagen2"
+        "galeria-imagen3 galeria-imagen4";
+    }   
+}
+
+@media (min-width:1024px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "galeria-imagen1 galeria-imagen2 galeria-imagen3 galeria-imagen4";
+    }   
+}
 /* ----------------------------- MAIN - CONTACTO ----------------------------- */
 
 .contacto__form {
@@ -168,7 +253,7 @@ main .container {
 }
 main h1 {
     color: white;
-    font-size: 1.3em;
+    font-size: 2em;
     margin-bottom: 5%;
 }
 
