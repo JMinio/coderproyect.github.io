@@ -152,29 +152,22 @@ nav ul li a:hover {
 }
 
 /* ----------------------------- MAIN - GALERIAS ----------------------------- */
-
-.container {
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+main .container {
     padding: 3% 15% 0% 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-h1 {
+main h1 {
     color: white;
     font-size: 1.3em;
     margin-bottom: 5%;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-main h1 {
-    color: white;
 }
 
 main #galery img {
@@ -186,23 +179,18 @@ main #galery img {
 .foto-a {
     grid-area: fotoA;
 }
-
 .foto-b {
     grid-area: fotoB;
 }
-
 .foto-c {
     grid-area: fotoC;
 }
-
 .foto-d {
     grid-area: fotoD;
 }
-
 .foto-e {
     grid-area: fotoE;
 }
-
 .foto-f {
     grid-area: fotoF;
 }
@@ -294,16 +282,6 @@ h3 {
         width: 20%;
     }
 
-    #galery {
-        /* GALERIA DE NIÑOS Y NIÑAS */
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: repeat(3, 400px);
-        grid-template-areas:
-            "fotoA fotoB fotoC"
-            "fotoA fotoD fotoC"
-            "fotoA fotoE fotoF";
-        gap: 10px;
-    }
 }
 
 /* ----------------------------- CODIGO DEL FOOTER -----------------------------  */
