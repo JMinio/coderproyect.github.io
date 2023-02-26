@@ -100,38 +100,6 @@ nav ul li a:hover {
         margin-right: 30px;
     }
 
-    .indexPresentacion {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .indexPresentacion .left {
-        width: 50%;
-    }
-
-    .indexPresentacion .right {
-        padding: 7%;
-        width: 50%;
-    }
-
-    .indexPresentacion .left h1 {
-        font-size: 5em;
-        font-weight: 600;
-    }
-
-    .indexPresentacion .left p,
-    h3 {
-        color: white;
-        padding: 5%;
-        margin-left: 15%;
-        width: 70%;
-        background-color: #131313;
-    }
-
-    .indexPresentacion .left div img {
-        width: 25%;
-    }
-
 }
 
 /* ----------------------------- MAIN - ACCESORIOS ----------------------------- */
@@ -355,18 +323,34 @@ h3 {
 @media (min-width:1024px) {
 
     .indexPresentacion {
+        display: flex;
         flex-direction: row;
     }
 
     .indexPresentacion .left {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 50%;
     }
 
-    .indexPresentacion .left .iconos-de-redes img {
-        width: 20%;
+    .indexPresentacion .left h1 {
+        font-size: 3em;
+        font-weight: 600;
+    }
+
+    .indexPresentacion .left p{
+        color: white;
+        padding: 5%;
+        margin-left: 15%;
+        width: 70%;
+        background-color: #131313;
+    }
+    
+    .indexPresentacion .left div img {
+        width: 25%;
+    }
+    
+    .indexPresentacion .right {
+        padding: 7%;
+        width: 50%;
     }
 
 }

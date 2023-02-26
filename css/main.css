@@ -67,7 +67,7 @@ nav ul li a:hover {
     width: 20%;
   }
   nav a img {
-    height: 5vh;
+    height: 6vh;
     width: 4vw;
   }
   nav ul li {
@@ -236,6 +236,51 @@ main #galery .foto-f {
   color: black;
 }
 
+.errorpage {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-image: url(https://img.freepik.com/fotos-premium/hombre-adulto-sosteniendo-gran-cartel-vacio-asustado_1368-51827.jpg?w=2000);
+  height: 100vh;
+  background-size: contain;
+}
+.errorpage .errorpage__main {
+  width: 25%;
+  margin: 3%;
+  transform: translateY(-20%);
+}
+.errorpage .errorpage__main h1 {
+  color: black;
+  font-size: 10em;
+  font-weight: 600;
+  text-align: center;
+}
+.errorpage .errorpage__main h2 {
+  text-align: center;
+}
+.errorpage .errorpage__main .botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.errorpage .errorpage__main .botones .volver, .errorpage .errorpage__main .botones .contactanos {
+  background-color: #131313;
+  color: white;
+  border-radius: 3px;
+  margin-top: 5%;
+  width: 45%;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 1%;
+}
+.errorpage .errorpage__main .botones .volver a, .errorpage .errorpage__main .botones .contactanos a {
+  text-decoration: none;
+  color: white;
+}
+.errorpage .errorpage__main .botones .volver:hover, .errorpage .errorpage__main .botones .contactanos:hover {
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -247,39 +292,38 @@ body {
 }
 
 .indexPresentacion {
-  height: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: center;
   display: flex;
+  height: auto;
+  align-items: center;
   flex-direction: column;
   padding-bottom: 10%;
 }
 @media (min-width: 1024px) {
-  .indexPresentacion .indexPresentacion {
+  .indexPresentacion {
     display: flex;
     flex-direction: row;
-    width: 100%;
   }
-  .indexPresentacion .indexPresentacion .left {
+  .indexPresentacion .left {
     width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
   }
-  .indexPresentacion .indexPresentacion .left h1 {
-    font-size: 5em;
+  .indexPresentacion .left h1 {
+    font-size: 3em;
     font-weight: 600;
   }
-  .indexPresentacion .indexPresentacion .left .iconos-de-redes a {
-    width: 33%;
+  .indexPresentacion .left p {
+    color: white;
+    padding: 5%;
+    margin-left: 15%;
+    width: 70%;
+    background-color: #131313;
   }
-  .indexPresentacion .indexPresentacion .left .iconos-de-redes a img {
-    margin-left: 5%;
-    width: 20%;
+  .indexPresentacion .left .iconos-de-redes a {
+    width: 70%;
   }
-  .indexPresentacion .indexPresentacion .right {
+  .indexPresentacion .left .iconos-de-redes a img {
+    width: 30%;
+  }
+  .indexPresentacion .right {
     width: 50%;
     padding: 7%;
   }
@@ -292,18 +336,18 @@ body {
   font-size: 3em;
   font-weight: 600;
 }
-.indexPresentacion .left p, .indexPresentacion .left h3 {
+.indexPresentacion .left p {
   color: white;
   padding: 5%;
   background-color: #131313;
 }
-.indexPresentacion .left div {
+.indexPresentacion .left .iconos-de-redes {
   display: flex;
   flex-direction: row;
   margin: 6% 0%;
-  justify-content: center;
+  justify-content: space-around;
 }
-.indexPresentacion .left div img {
+.indexPresentacion .left .iconos-de-redes img {
   width: 50%;
 }
 .indexPresentacion .right {

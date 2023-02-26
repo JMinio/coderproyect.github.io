@@ -1,5 +1,3 @@
-
-
 @mixin medias ($breakpoint){
     @if $breakpoint == mobile {
         @media (min-width:460px){

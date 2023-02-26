@@ -1,0 +1,68 @@
+@mixin medias ($breakpoint){
+    @if $breakpoint == mobile {
+        @media (min-width:460px){
+            @content;
+        }
+    }
+
+    @if $breakpoint == tablet {
+        @media (min-width:600px){
+            @content;
+        }
+    }
+
+    @if $breakpoint == desktop {
+        @media (min-width:1024px){
+            @content;
+        }
+    }
+}
+
+
+.errorpage{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-image: url(https://img.freepik.com/fotos-premium/hombre-adulto-sosteniendo-gran-cartel-vacio-asustado_1368-51827.jpg?w=2000);
+    height: 100vh;
+    background-size: contain;
+
+    .errorpage__main{
+        width: 25%;
+        margin: 3%;
+        transform: translateY(-20%);
+        h1{
+            color:black;
+            font-size: 10em;
+            font-weight: 600;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }    
+        .botones{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .volver,.contactanos{
+                background-color: $primaryBackColor;
+                color: $primaryTextColor;
+                border-radius: 3px;
+                margin-top: 5%;
+                width: 45%;
+                font-weight: 600;
+                font-size: 1em;
+                padding: 1%;   
+                a{
+                    text-decoration: none;
+                    color: $primaryTextColor;
+                }
+                
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
